@@ -1,25 +1,48 @@
-let welcomeE = document.getElementById("welcome-e");
-var yourName = "Shrunkhal";
-var greet = "Welcome!";
+let countEl = document.getElementById("count-el"); 
 
-welcomeE.innerText = greet + yourName;
-welcomeE.innerText = welcomeE.innerText+" :)"
+let saveEl = document.getElementById("save-el");
 
-let countEl = document.getElementById("count-el");
-let count = 0;
+let welcomeEl = document.getElementById("welcome-el");
+
+// prompt("Tell me your name");
+// welcomeEl.innerText = "Welcome Shrunkhal";
+
+
+let count =0;   
+
 function increment(){
    count = count+1;
    countEl.innerText = count;
-   console.log("clicked!"+" "+count)
+   console.log("Increased"+count)
+}
+
+function decrement(){
+    count = count-1;
+    countEl.innerText = count;
+    console.log("Decreased"+count);
 
 }
 
-let saveEl = document.getElementById("save-el")
-
-function Save(){
-    var countStr = count + " - "
-    saveEl.textContent  += countStr;
-    console.log("Saved!! at "+count)
-    countEl.innerText =0;
-    count=0;
+ 
+function save(){
+    //countEl.innerText = count;
+    console.log(count+"Saved!!")
+    saveEl.innerText +=  count+" - ";
+    countEl.innerText = 0;
+    count = 0;
 }
+
+var textInput = document.getElementById("text-input");
+var greyInput = document.getElementById("grey");
+
+greyInput.addEventListener("click",function(){
+    textInput.style.fontSize = "100px"
+});
+
+function load(){
+    document.getElementById("text-input").style.color = "green";
+}
+function blue(){
+    document.getElementById("text-input").style.color = "pink";
+}
+
