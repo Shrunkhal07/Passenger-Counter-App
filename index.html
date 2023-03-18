@@ -5,33 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="/style.css" rel="stylesheet">
 </head>
-<body>
-    <h2 id="welcome-el"><h2>
+<body class="body">
+
 
    <h1>Passenger Counter App</h1>
    <h2 id="count-el">0</h2>
    <button id="increment-btn" onclick="increment()">+</button>
    <button id="decrement-btn" onclick="decrement()">-</button>
-   <button id="save-btn" onclick="save()">SAVE</button>
+  
+   <span><button id="save-btn" onclick="save()">SAVE</button></span>
    <h2 id="save-el" >Previous Eneries: </h2>
 
 
-<h2 id="text-input">Loading...</h2>
-<button onClick="load()">Load</button>
-<button onClick="blue()">Blue</button>"
-<button id="grey">Head</button>
+<h2 id="text-input">Loading...</h2> 
+<button onClick="pink()">Pink</button>
+<button onClick="blue()">Blue</button>
+<button onClick="head()">Head</button>
 
-<script src="app.js">
-</script>    
+ </br>
+</br>
+</br>
+<p id="welcome-el">Welcome</p>
 
-    <div class="nav-brand"><h1>People entered</h1></div>
-    <h2 id="count-el">0</h2>
-    <button id="increment-btn"  onclick="increment()">Increment</button>
-    <button id="save-btn" onclick="Save()">Save</button>
-    <p id="save-el">Previous Enteries-</p>
-    <h2>iD</h2>
-    <script src="app.js">
-    </script>
+<section><p id="input-text1"></p>
+<p id="input-text2"></p>
+</section>
+<button id="add-btn" onclick="add()">ADD</button>
+<button id="sub-btn" onclick="substract()">Substract</button>
+<button id="multi-btn" onclick="multiply()">Multiply</button>
+<button id="divide-btn" onclick="divide()">Divide</button>
+<p id="Result-el">The Result is: </p>
+
+</br>
+</br>
+</br>
+</br>
+<h1>BlackJack</h1>
+<p id="message-el">Want to play a round?</p>
+<p id="card-el">Cards:</p>
+<p id="sum-el">Sum:</p>
+<button onclick="startGame()">START GAME</button>
+<button onClick="newCard()">NEW CARD</button>
+<p id="player-el"></p>
+</br>
+
+<div id = "apple-shelf"></div>
+</br>
+<div id="orange-shelf"></div>
+</br>
+</br>
+
+
+
+<script src="app.js">   </script>
 </body>
 </html>
