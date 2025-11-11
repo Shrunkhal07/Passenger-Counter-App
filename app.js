@@ -1,4 +1,7 @@
-//-------Counter and Save--------
+
+//What is the most complicated code you have written 
+//independently without AI or anyone else's assistance?
+
 let countEl = document.getElementById("count-el")
 let saveBtn = document.getElementById("save-btn")
 let saveEl = document.getElementById("save-el")
